@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE payara-web-app PUBLIC "-//Payara.fish//DTD Payara Server 4 Servlet 3.0//EN"
+        "https://raw.githubusercontent.com/payara/Payara/master/appserver/extras/payara-micro/payara-micro-core/src/main/resources/dtd/payara-web-app_4.dtd">
+<payara-web-app>
+  <!--
+    Map the security realm to Payara's built-in "file" realm.
+    Users are managed in $PAYARA_HOME/domains/domain1/config/keyfile.
+
+    Default test credentials (created via asadmin or keyfile):
+      Username : admin
+      Password : admin123
+      Group    : translator-user
+
+    Change these before deploying to production!
+    See README for instructions on creating users with asadmin.
+  -->
+  <security>
+    <role-mapping>
+      <role name="translator-user">
+        <group name="translator-user"/>
+      </role>
+    </role-mapping>
+  </security>
+</payara-web-app>

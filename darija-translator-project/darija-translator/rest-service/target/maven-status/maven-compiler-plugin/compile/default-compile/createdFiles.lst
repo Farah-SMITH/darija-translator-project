@@ -1,0 +1,7 @@
+ma\translator\TranslatorApplication.class
+ma\translator\service\GeminiTranslatorService.class
+ma\translator\service\GeminiTranslatorService$TranslationException.class
+ma\translator\auth\CORSFilter.class
+ma\translator\model\TranslationRequest.class
+ma\translator\model\TranslationResponse.class
+ma\translator\resource\TranslatorResource.class
